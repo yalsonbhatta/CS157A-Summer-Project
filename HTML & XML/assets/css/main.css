@@ -1,0 +1,41 @@
+/*container css*/
+
+.container #vehicleheader {
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+}
+.container .sub_container {
+    margin: 50px 0 50px 0;
+}
+.container .sub_container form div {
+    margin-top: 20px;
+}
+
+.sub_container form label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sub_container form .select {
+    background-color: rgb(221, 221, 189);
+    height: 27px;
+    border: none;
+}
+.sub_container form .lg {
+    width: 200px;
+} 
+
+.sub_container form .sm {
+    width: 70px;
+}
+.sub_container form [type=submit] {
+    background-color: green;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border: 1px solid rgba(0, 0, 255, 0.233);
+    border-radius: 10px;
+}
+.sub_container form [type=submit]:hover {
+    background-color: blue;
+}
