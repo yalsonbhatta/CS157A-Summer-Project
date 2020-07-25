@@ -42,7 +42,7 @@ public class sqlShow extends HttpServlet {
 				String model = rs.getString("model");
 				int year = Integer.parseInt(rs.getString("year"));
 				String price = rs.getString("price");
-				if(make.equals(i) && (price.substring(0, 1)).contentEquals(j) && k<=year && year<=z) {
+				if(make.equals(i) && (price.substring(0, 1).contentEquals(j) || j.equals("0"))  && k<=year && year<=z) {
 				out.println("Make: " + make + "<br>");
 				out.println("Model: " + model + "<br>");
 				out.println("Year: " + year + "<br>");
