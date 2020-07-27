@@ -18,15 +18,10 @@ public class sqlShow extends HttpServlet {
 		String docType = "<!doctype html public \"-//w3c//dtd html 4.0 " + "transitional//en\">\n";
 		out.println(docType + "<html>\n" + "<head><title>" + title + "</title></head>\n"
 				+ "<body bgcolor = \"#f0f0f0\">\n" + "<h1 align = \"center\">" + title + "</h1>\n");
-
-		// data from frontend
-
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection connection = DriverManager
 					.getConnection("jdbc:mysql://localhost:3306/car?serverTimezone=Asia/Hong_Kong", "root", "root");
-			java.util.Date now = new java.util.Date();
-			java.sql.Date sqlDate = new java.sql.Date(now.getTime());
 
 			String querySql = "SELECT * FROM car";
 			Statement st = connection.createStatement();
