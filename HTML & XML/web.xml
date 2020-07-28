@@ -2,12 +2,34 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
 
 <servlet>
+   <servlet-name>a</servlet-name>
+   <servlet-class>demo.logIn</servlet-class>
+</servlet>
+
+<servlet>
    <servlet-name>b</servlet-name>
    <servlet-class>demo.sqlShow</servlet-class>
 </servlet>
- 
+
+<servlet>
+   <servlet-name>c</servlet-name>
+   <servlet-class>demo.register</servlet-class>
+</servlet>
+
+
+<servlet-mapping>
+   <servlet-name>a</servlet-name>
+   <url-pattern>/log</url-pattern>
+</servlet-mapping>
+
 <servlet-mapping>
    <servlet-name>b</servlet-name>
    <url-pattern>/choose</url-pattern>
 </servlet-mapping>
+
+<servlet-mapping>
+   <servlet-name>c</servlet-name>
+   <url-pattern>/register</url-pattern>
+</servlet-mapping>
+
 </web-app>
