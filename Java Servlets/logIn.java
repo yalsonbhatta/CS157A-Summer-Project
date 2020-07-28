@@ -24,6 +24,10 @@ public class logIn extends HttpServlet {
 			Statement st = connection.createStatement();
 			ResultSet rs = st.executeQuery(querySql);
 
+			String adminQuery = "SELECT * FROM car.admin;";
+			Statement st2 = connection.createStatement();
+			ResultSet rs2 = st2.executeQuery(adminQuery);
+
 			// web
 			String wId = req.getParameter("username");
 			String wPw = req.getParameter("password");
@@ -32,6 +36,14 @@ public class logIn extends HttpServlet {
 				String id = rs.getString("user_id");
 				String pw = rs.getString("password");
 				if (wId.equals(id) && wPw.equals(pw)) {
+					while (rs2.next()) {
+						String aId = rs2.getString("user_id");
+						System.out.println(aId);
+						if (wId.equals(aId)) {
+							res.sendRedirect("aMain.html");
+							return;
+						}
+					}
 					res.sendRedirect("main.html");
 					return;
 				}
