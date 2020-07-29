@@ -37,14 +37,16 @@ public class sqlShow extends HttpServlet {
 				String model = rs.getString("model");
 				int year = Integer.parseInt(rs.getString("year"));
 				String price = rs.getString("price");
+				String carId = rs.getString("car_id");
 				if(make.equals(i) && (price.substring(0, 1).contentEquals(j) || j.equals("0"))  && k<=year && year<=z) {
 				out.println("Make: " + make + "<br>");
 				out.println("Model: " + model + "<br>");
 				out.println("Year: " + year + "<br>");
-				out.println("Price: " + price + "<br> + <br>");
+				out.println("Price: " + price + "<br>");
+				out.println("Car ID: " + carId + "<br> + <br>");
 				}
 			}
-			out.println("</body></html>");
+            out.println("<button type=\"submit\" formaction=\"logIn.html\">cancel</button>");
 			st.close();
 			rs.close();
 			connection.close();
