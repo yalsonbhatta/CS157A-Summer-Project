@@ -1,39 +1,45 @@
-<!DOCTYPE html>   
-<html>   
-<head>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Log In</title>
+	<title>Signup</title>
+	<link rel="stylesheet" href="assets/css/style.css" >
+	<link rel="stylesheet" href="assets/css/auth.css" >
 </head>    
 <body>    
-    <h1>Register</h1>   
-    <form>  
-        <div class="container">   
-            <label>User ID: (Numbers Only)</label>   
-            <br />
-            <input type="text" placeholder="Enter User Id" name="username"> 
-            <br /> <br />
-            <label>First Name: </label>   
-            <br />           
-            <input type="text" placeholder="Enter First Name" name="fName"> 
-            <br /> <br />
-            <label>Last Name: </label>   
-            <br />
-            <input type="text" placeholder="Enter Last Name" name="lName"> 
-            <br /> <br />
-            <label>Email: </label>   
-            <br />
-            <input type="text" placeholder="Enter Email" name="email"> 
-            <br /> <br />
-            <label>Password: </label>   
-            <br />
-            <input type="password" placeholder="Enter Password" name="password">  
-              <br /><br />
-            <button type="submit" formaction="register">Register!</button>
-            <br /><br />
-            <button type="submit" formaction="logIn.html">cancel</button>
-            <br />
-           </div>   
-    </form>     
+	<div class="container">
+		<div class="form_container">
+			<h1>Register</h1> 
+			<!-- need to change # with the method   -->
+			<form action="#">   
+				<div class="formInput">
+					<label>User ID:</label>   
+					<input type="number" placeholder="Enter User Id" name="username" /> 
+				</div>
+				<div class="formInput">
+					<label>First Name: </label> 
+					<input type="text" placeholder="Enter First Name" name="fName" /> 
+				</div>
+				<div class="formInput">
+					<label>Last Name: </label>   
+					<input type="text" placeholder="Enter Last Name" name="lName" /> 
+				</div>
+				<div class="formInput">
+					<label>Email: </label>   
+					<input type="text" placeholder="Enter Email" name="email" /> 
+				</div>
+				<div class="formInput">
+					<label>Password: </label>   
+					<input type="password" placeholder="Enter Password" name="password" />  
+				</div>
+				<div class="btnContainer">
+					<button class="btn btn-submit" type="submit" formaction="register">Register!</button>
+					<h4>Already have an account?</h4>
+					<button class="btn btn-goto" type="submit" formaction="logIn.html">Go to Login</button>
+				</div>
+			</form>  
+		</div>
+	</div>
 </body>     
 </html>  
