@@ -24,7 +24,7 @@ DROP TABLE IF EXISTS `wishlist`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `wishlist` (
   `wishlist_name` varchar(45) NOT NULL,
-  `size` int NOT NULL
+  `car_id` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -34,7 +34,7 @@ CREATE TABLE `wishlist` (
 
 LOCK TABLES `wishlist` WRITE;
 /*!40000 ALTER TABLE `wishlist` DISABLE KEYS */;
-INSERT INTO `wishlist` VALUES ('Honda List',3),('Future Buy',2),('Look For',5),('Waiting For',7),('Price Check',10),('When drop',3),('Just looking',22),('One day',4),('Just a dream',1),('Soon',2),('Never',9),('Imagination',11),('Please',3),('Give me',7),('MINE',8);
+INSERT INTO `wishlist` VALUES ('Honda List',1),('Future Buy',2),('Look For',3),('Never',4),('Price Check',5),('When drop',6),('Just looking',7),('One day',8),('Just a dream',9),('Just looking',10),('Never',11),('Just a dream',12),('Just looking',13),('Give me',14),('Honda List',15);
 /*!40000 ALTER TABLE `wishlist` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
