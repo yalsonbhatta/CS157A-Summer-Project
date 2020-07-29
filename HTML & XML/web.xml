@@ -21,6 +21,20 @@
    <servlet-class>demo.updateCar</servlet-class>
 </servlet>
 
+<servlet>
+   <servlet-name>e</servlet-name>
+   <servlet-class>demo.inquireWlist</servlet-class>
+</servlet>
+
+<servlet>
+   <servlet-name>f</servlet-name>
+   <servlet-class>demo.wishListAdd</servlet-class>
+</servlet>
+
+<servlet>
+   <servlet-name>g</servlet-name>
+   <servlet-class>demo.clone</servlet-class>
+</servlet>
 
 <servlet-mapping>
    <servlet-name>a</servlet-name>
@@ -42,4 +56,18 @@
    <url-pattern>/updateCar</url-pattern>
 </servlet-mapping>
 
+<servlet-mapping>
+   <servlet-name>e</servlet-name>
+   <url-pattern>/inquire</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+   <servlet-name>f</servlet-name>
+   <url-pattern>/add</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+   <servlet-name>g</servlet-name>
+   <url-pattern>/clone</url-pattern>
+</servlet-mapping>
 </web-app>
