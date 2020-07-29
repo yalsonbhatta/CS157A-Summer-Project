@@ -16,6 +16,11 @@
    <servlet-class>demo.register</servlet-class>
 </servlet>
 
+<servlet>
+   <servlet-name>d</servlet-name>
+   <servlet-class>demo.updateCar</servlet-class>
+</servlet>
+
 
 <servlet-mapping>
    <servlet-name>a</servlet-name>
@@ -30,6 +35,11 @@
 <servlet-mapping>
    <servlet-name>c</servlet-name>
    <url-pattern>/register</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+   <servlet-name>d</servlet-name>
+   <url-pattern>/updateCar</url-pattern>
 </servlet-mapping>
 
 </web-app>
