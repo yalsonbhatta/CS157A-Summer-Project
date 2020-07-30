@@ -13,43 +13,33 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class logIn extends HttpServlet {
+public class clone extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection connection = DriverManager
 					.getConnection("jdbc:mysql://localhost:3306/car?serverTimezone=Asia/Hong_Kong", "root", "root");
 
-			String querySql = "SELECT * FROM car.user;";
+			// web
+			String cloned = req.getParameter("cloned");
+			String clone = req.getParameter("clone");
+
 			Statement st = connection.createStatement();
+			String querySql = "SELECT * FROM car.wishlist";
 			ResultSet rs = st.executeQuery(querySql);
 
-			String adminQuery = "SELECT * FROM car.admin;";
-			Statement st2 = connection.createStatement();
-			ResultSet rs2 = st2.executeQuery(adminQuery);
-
-			// web
-			String wId = req.getParameter("username");
-			String wPw = req.getParameter("password");
-
 			while (rs.next()) {
-				String id = rs.getString("user_id");
-				String pw = rs.getString("password");
-				if (wId.equals(id) && wPw.equals(pw)) {
-					while (rs2.next()) {
-						String aId = rs2.getString("user_id");
-						System.out.println(aId);
-						if (wId.equals(aId)) {
-							res.sendRedirect("aMain.html");
-							return;
-						}
-					}
-					res.sendRedirect("main.html");
-					return;
+				String original = rs.getString("wishlist_name");
+				String carId = rs.getString("car_id");
+				if (cloned.equals(original)) {
+					Statement st2 = connection.createStatement();
+					String querySql2 = "INSERT INTO car.wishlist (wishlist_name, car_id) VALUES ('" + clone + "', '"
+							+ carId + "');";
+					int rs2 = st2.executeUpdate(querySql2);
 				}
 			}
-			res.sendRedirect("logIn.html");
-			return;
+			res.sendRedirect("wishlist.html");
+
 		} catch (SQLException se) {
 			// jdbc
 			se.printStackTrace();
