@@ -3,98 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>The Vehicle Selector</title>
+	<title>Friend Search</title>
 	<link rel="stylesheet" href="assets/css/style.css" >
-	<link rel="stylesheet" href="assets/css/friendlist.css" >
-</head>
-<body>
-	<div class="header">
-		<a href="main.html">Home</a>
-		<ul>
-			<li><a href="friendlist.html">Friend List</a></li>
-			<li><a href="about.html">About</a></li>
-		</ul>
-	</div>
-
+	<link rel="stylesheet" href="assets/css/auth.css" >
+</head>    
+<body>    
 	<div class="container">
-        <h1 id="vehicleheader">Friendlist</h1>
-		<div id="containerBox">
-			<div>
-				<div id="fullName">EG: Rabin Gurung</div>
-				<form action="choose">
-					<button type="submit">Unfriend</button>
-				</form>
-			</div>
-			<div>
-				<div id="fullName">EG: Rabin Gurung</div>
-				<form action="choose">
-					<button type="submit">Unfriend</button>
-				</form>
-			</div>
-			<div>
-				<div id="fullName">EG: Rabin Gurung</div>
-				<form action="choose">
-					<button type="submit">Unfriend</button>
-				</form>
-			</div>
-			<div>
-				<div id="fullName">EG: Rabin Gurung</div>
-				<form action="choose">
-					<button type="submit">Unfriend</button>
-				</form>
-			</div>
+		<div class="form_container">
+			<form action="#">   
+				<div class="formInput">
+					<label>User ID: </label> 
+					<input type="number" placeholder="Enter User Id" name="user_id" /> 
+				</div>
+				<div class="btnContainer">
+                    <button class="btn btn-submit" type="submit"  formaction="searchFdList">Login</button>  
+                    <br />
+					<button class="btn btn-goto" type="submit" formaction="logIn.html">cancel</button>
+				</div>
+			</form>  
 		</div>
 	</div>
-
-	
-
-	<script>
-		// a list of all item that should get from backend
-		let a = [
-			{
-				name: "rabin",
-				lastname: "gurung"
-			},
-			{
-				name: "prakash",
-				lastname: "Acharya"
-			}
-		]
-		
-
-		//refrence the ul tag with id name
-		let container = document.getElementById('friend_container');
-
-		//looping over the data that come from backend
-		for(var i = 0; i<= a.length-1; i++) {
-			//each item
-			let item = a[i];
-
-			//properties of each item
-			let firstName = item.name;
-			let lastname = item.lastname;
-
-			var node = document.createTextNode(firstName);
-			var node2 = document.createTextNode(lastname);
-
-			//create a div tag
-			let box = document.createElement('div');
-			//ass a class attribute
-			box.setAttribute('class', 'nameBox')
-
-			//create and li tag to put the value
-			let list1 = document.createElement('li');
-			list1.setAttribute('class', 'name');
-
-			list1.appendChild(node);
-			list1.appendChild(node2);
-
-			box.appendChild(list1);
-		}
-		
-		container.append(box);
-
-
-	</script>
-</body>
-</html>
+</body>       
+</html>  
