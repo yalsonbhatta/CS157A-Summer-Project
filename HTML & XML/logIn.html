@@ -1,28 +1,33 @@
-<!DOCTYPE html>   
-<html>   
-<head>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Log In</title>
+	<title>Login</title>
+	<link rel="stylesheet" href="assets/css/style.css" >
+	<link rel="stylesheet" href="assets/css/auth.css" >
 </head>    
 <body>    
-    <h1>Log In</h1>   
-    <form>  
-        <div class="container">   
-            <label>User ID: </label>   
-            <br />
-            <input type="text" placeholder="Enter User Id" name="username"> 
-            <br /> 
-            <label>Password: </label>   
-            <br />
-            <input type="password" placeholder="Enter Password" name="password">  
-            <br />
-            <br />
-            <button type="submit" formaction="log">Login</button>   
-            <br />
-            <br />
-            <button type="submit" formaction="register.html">Register</button>   
-           </div>   
-    </form>     
-</body>     
+	<div class="container">
+		<div class="form_container">
+			<h1>Log In</h1> 
+			<!-- need to change # with the method   -->
+			<form action="#">   
+				<div class="formInput">
+					<label>User ID: </label> 
+					<input type="number" placeholder="Enter User Id" name="username" /> 
+				</div>
+				<div class="formInput">
+					<label>Password: </label>   
+					<input type="password" placeholder="Enter Password" name="password" />  
+				</div>
+				<div class="btnContainer">
+                    <button class="btn btn-submit" type="submit"  formaction="log">Login</button>  
+					<h4>Dont have a account? Go to </h4>
+					<button class="btn btn-goto" type="submit" formaction="register.html">Signup</button>
+				</div>
+			</form>  
+		</div>
+	</div>
+</body>       
 </html>  
