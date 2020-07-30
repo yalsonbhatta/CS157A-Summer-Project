@@ -28,14 +28,33 @@
 .sub_container form .sm {
     width: 70px;
 }
-.sub_container form [type=submit] {
+.sub_container form .btn-submit {
     background-color: green;
     width: 100px;
-    height: 30px;
-    color: white;
     border: 1px solid rgba(0, 0, 255, 0.233);
     border-radius: 10px;
 }
-.sub_container form [type=submit]:hover {
+.sub_container form .btn-submit:hover {
     background-color: blue;
+}
+.btn {
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+}
+.btn-link {
+    background-color: rgba(255, 0, 0, 0.637);
+    width: 70px;
+    border: none;
+}
+.btn-link:hover{
+    background-color: red;
+}
+.btn-cancel {
+    background-color:rgba(0, 0, 0, 0.61);
+    width: 70px;
+    border: none;
+}
+.btn-cancel:hover{
+    background-color: rgb(68, 21, 21);
 }

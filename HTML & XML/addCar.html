@@ -1,39 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Add Car</title>
+	<title>Add car</title>
+	<link rel="stylesheet" href="assets/css/style.css" >
+	<link rel="stylesheet" href="assets/css/main.css" >
 </head>
 <body>
-	<h1>Add Car</h1>
-	<form>
-		<div class="container">
-			<label>Car ID:</label>
-			<br />
-			<input type ="text" placeholder = "Enter Car ID" name = "carID">
-			<br /><br />
-			<label>Car Make:</label>
-			<br />
-			<input type ="text" placeholder = "Enter Car Make" name = "make">
-			<br /><br />
-			<label>Car Model:</label>
-			<br />
-			<input type ="text" placeholder = "Enter Car Model" name = "model">
-			<br /><br />
-			<label>Car Year:</label>
-			<br />
-			<input type ="text" placeholder = "Enter Car Year" name = "year">
-			<br /><br />
-			<label>Car Price:</label>
-			<br />
-			<input type ="text" placeholder = "Enter Car Price" name = "price">
-			<button type="submit" formaction="insertCar">ADD!</button>
-            <br /><br />
-            <button type="submit" formaction="aMain.html">cancel</button>
-			<br />
+	<div class="header">
+		<a href="aMain.html">Home</a>
+		<ul>
+			<li><a href="wishlist.html">Wish List</a></li>
+			<li><a href="friendlist.html">Friend List</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="addCar.html">Add Car</a></li>
+			<li><a href="updateCar.html">Update Car</a></li>
+			<li><a href="deleteCar.html">Delete Car</a></li>
+			<li><a href="logIn.html">Log Out</a></li>
+		</ul>
+	</div>
+	<div class="container">
+		<h1>Add Car</h1>
+		<div class="sub_container">
+			<form>
+				<div>
+					<label>Car ID:</label>
+					<input type ="text" placeholder = "Enter Car ID" name = "carID">
+				</div>
+				<div>
+					<label>Car Make:</label>
+					<input type ="text" placeholder = "Enter Car Make" name = "make">
+				</div>
+				<div>
+					<label>Car Model:</label>
+					<input type ="text" placeholder = "Enter Car Model" name = "model">
+				</div>
+				<div>
+					<label>Car Year:</label>
+					<input type ="text" placeholder = "Enter Car Year" name = "year">
+				</div>
+				<div>
+					<label>Car Price:</label>
+					<input type ="text" placeholder = "Enter Car Price" name = "price">
+				</div>
+				<div>				
+					<button class="btn btn-submit" type="submit" formaction="insertCar">ADD!</button>
+				</div>
+				<div>
+					<button class="btn btn-link"  formaction="aMain.html">cancel</button>
+				</div>
+			</form>
 		</div>
-	</form>
+	</div>
 
 </body>
 </html>
