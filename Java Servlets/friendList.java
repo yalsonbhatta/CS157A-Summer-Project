@@ -37,7 +37,7 @@ public class friendList extends HttpServlet {
 				if(wUser_id.equals(user_id)) {
 					out.println( fName+" "+ lName  + "'s Friend(s)"+ "<br>");
 					//list id
-					String querySql2 = "SELECT * FROM friendlist";
+					String querySql2 = "SELECT * FROM user_has_friendlist";
 					Statement st2 = connection.createStatement();
 					ResultSet rs2 = st2.executeQuery(querySql2);
 						while(rs2.next()) {
@@ -45,7 +45,7 @@ public class friendList extends HttpServlet {
 							String user_id2 = rs2.getString("user_id");
 							if(user_id2.equals(user_id)) {
 								//list of friends
-								String querySql3 = "SELECT * FROM friendlist";
+								String querySql3 = "SELECT * FROM user_has_friendlist";
 								Statement st3 = connection.createStatement();
 								ResultSet rs3 = st3.executeQuery(querySql3);
 								while(rs3.next()) {
