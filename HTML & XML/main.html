@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>The Vehicle Selector</title>
-	<link rel="stylesheet" href="assets/style.css" >
-	<link rel="stylesheet" href="assets/main.css" >
+	<link rel="stylesheet" href="assets/css/style.css" >
+	<link rel="stylesheet" href="assets/css/main.css" >
 </head>
 <body>
 	<div class="header">
@@ -23,11 +23,11 @@
 		<div class="sub_container">
 			<p>Please enter your preference</p>
 	
-			<form action="choose" id="form">
+			<form action="choose" id="form" autocomplete="off">
 				<div>
 					<label for="make">Make:</label> 
-					<select name="make" id="make" class="select lg">
-						<option value=""></option>
+					<input type="text" list="make" name="make" />
+					<datalist id="make">
 						<option value="Volvo">Volvo</option>
 						<option value="ISUZU">ISUZU</option>
 						<option value="Hyundai">Hyundai</option>
@@ -40,25 +40,26 @@
 						<option value="E-Ton">E-Ton</option>
 						<option value="Honda">Honda</option>
 						<option value="Aprilia">Aprilia</option>
-						<option value="ArcticCat">Arctic Cat</option>
+						<option value="Arctic Cat">Arctic Cat</option>
 						<option value="Mercedes-Benz">Mercedes-Benz</option>
-					</select>
+					</datalist>
 				</div>
 				<div>
 					<label for="price">Price Range:</label> 
-					<select name="price" id="price" class="select lg">
-						<option value=""></option>
-						<option value="3">$3000-$3999</option>
-						<option value="4">$4000-$4999</option>
-						<option value="5">$5000-$5999</option>
-						<option value="6">$6000-$6999</option>
+					<input type="text" list="price" name="price"/>
+					<datalist id="price">
+						<option value="3"> means $3000-$3999</option>
+						<option value="4">means $4000-$4999</option>
+						<option value="5">means $5000-$5999</option>
+						<option value="6">means $6000-$6999</option>
 						<option value="0">None</option>
-					</select> 
+					</datalist>
+					
 				</div>
 				<div>
-					<label for="sYear">Year: </label> 
-					<select name="sYear" id="sYear" class="select sm">
-						<option value=""></option>
+					<label for="sYear">Year: </label>
+					<input type="text" list="sYear" name="sYear"/>
+					<datalist id="sYear">
 						<option value="2005">2005</option>
 						<option value="2006">2006</option>
 						<option value="2007">2007</option>
@@ -68,11 +69,11 @@
 						<option value="2011">2011</option>
 						<option value="2012">2012</option>
 						<option value="2013">2013</option>
-					</select>
+					</datalist>
 				
 					<label for="lYear">to</label> 
-					<select name="lYear" id="lYear" class="select sm">
-						<option value=""></option>
+					<input type="text" list="lYear" name="lYear"/>
+					<datalist id="lYear">
 						<option value="2005">2005</option>
 						<option value="2006">2006</option>
 						<option value="2007">2007</option>
@@ -82,7 +83,7 @@
 						<option value="2011">2011</option>
 						<option value="2012">2012</option>
 						<option value="2013">2013</option>
-					</select>
+					</datalist>
 				</div>
 				<div>
 					<input type="submit" value="Submit">
