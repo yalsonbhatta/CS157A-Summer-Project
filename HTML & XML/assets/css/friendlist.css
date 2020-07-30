@@ -1,1 +1,25 @@
 /* friendlist css*/
+#containerBox {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#containerBox > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10% 10px 10%;
+    color: aliceblue;
+    border-bottom: 1px solid grey;
+}
+#containerBox button {
+    width: 100px;
+    height: 25px;
+    background-color: rgba(255, 96, 96, 0.74);
+    border: none;
+    border-radius: 3px;
+}
+#containerBox button:hover{
+    background-color: rgb(248, 58, 58);
+    color: white;
+    
+}
