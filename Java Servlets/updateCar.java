@@ -48,7 +48,7 @@ public class updateCar extends HttpServlet{
 					
 					Statement nst = connection.createStatement();
 					int nrs = nst.executeUpdate(querySql);
-					res.sendRedirect("main.html");
+					res.sendRedirect("aMain.html");
 					return;
 				}
 			}
