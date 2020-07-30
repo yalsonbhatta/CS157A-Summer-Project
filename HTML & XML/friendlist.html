@@ -3,11 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Friend Search</title>
+	<title>The Vehicle Selector</title>
 	<link rel="stylesheet" href="assets/css/style.css" >
 	<link rel="stylesheet" href="assets/css/auth.css" >
-</head>    
-<body>    
+</head>
+<body>
+	<div class="header">
+		<a href="main.html">Home</a>
+		<ul>
+			<li><a href="wishlist.html">Wish List</a></li>
+			<li><a href="friendlist.html">Friend List</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="logIn.html">Log Out</a></li>
+		</ul>
+	</div>
 	<div class="container">
 		<div class="form_container">
 			<form action="#">   
@@ -16,9 +25,7 @@
 					<input type="number" placeholder="Enter User Id" name="user_id" /> 
 				</div>
 				<div class="btnContainer">
-                    <button class="btn btn-submit" type="submit"  formaction="searchFdList">Login</button>  
-                    <br />
-					<button class="btn btn-goto" type="submit" formaction="logIn.html">cancel</button>
+                    <button class="btn btn-submit" type="submit"  formaction="searchFdList">Search Friend</button>  
 				</div>
 			</form>  
 		</div>

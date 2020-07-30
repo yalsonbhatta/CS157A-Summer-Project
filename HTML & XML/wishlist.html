@@ -1,46 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wishlist</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wish List</title>
+	<link rel="stylesheet" href="assets/css/style.css" >
+	<link rel="stylesheet" href="assets/css/auth.css" >
 </head>
 <body>
-	<h1>Inquire Wish List</h1>
-	<form>
-		<div class="container">
-			<label>Wish List Name:</label> <br /> <input type="text"
-				placeholder="Enter wish list name" name="inquire"> <br />
-			<br />
-			<button type="submit" formaction="inquire">Inquire</button>
-			<br />
-			<br />
+	<div class="header">
+		<a href="main.html">Home</a>
+		<ul>
+			<li><a href="wishlist.html">Wish List</a></li>
+			<li><a href="friendlist.html">Friend List</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="logIn.html">Log Out</a></li>
+		</ul>
+	</div>
+	<div class="container">
+		<div class="form_container">
+			<h1>Inquire Wish List</h1>
+			<form>
+				<div class="formInput">
+					<label>Wish List Name:</label>
+					<input type="text" placeholder="Enter wish list name" name="inquire">
+				</div>
+				<div class="btnContainer">
+					<button class="btn btn-submit" type="submit" formaction="inquire">Inquire</button>
+				</div>
+			</form>
 		</div>
-	</form>
-	<h1>Add Car to Wish List</h1>
-	<form>
-		<div class="container">
-			<label>Car ID: (Numbers Only)</label> <br /> <input type="text"
-				placeholder="Enter Car Id" name="aCid"> <br /> <br />
-			<label>List Name: </label> <br /> <input type="text"
-				placeholder="Enter List Name" name="list"> <br /> <br />
-			<button type="submit" formaction="add">Add!</button>
-			<br />
+		<br>
+		<div class="form_container">
+			<h1>Add Car to Wish List</h1>
+			<form>
+				<div class="formInput">
+					<label>Car ID: (Numbers Only)</label> 
+					<input type="text" placeholder="Enter Car Id" name="aCid">
+				</div>
+				<div class="formInput">
+					<label>List Name: </label> 
+					<input type="text" placeholder="Enter List Name" name="list"> 
+				</div>
+				<div class="btnContainer">
+					<button class="btn btn-submit" type="submit" formaction="add">Add!</button>
+				</div>
+			</form>
 		</div>
-	</form>
-	<h1>Clone Wish List</h1>
-	<form>
-		<div class="container">
-			<label>Original List Name: </label> <br /> <input type="text"
-				placeholder="Enter Original List" name="cloned"> <br /> <br />
-			<label>Clone List Name: </label> <br /> <input type="text"
-				placeholder="Enter Clone Name" name="clone"> <br /> <br />
-			<button type="submit" formaction="clone">Clone</button>
-			<br />
-			<br />
-			<button type="submit" formaction="logIn.html">cancel</button>
-			<br />
+		<br>
+		<div class="form_container">
+			<h1>Clone Wish List</h1>
+			<form>
+				<div class="formInput">
+					<label>Original List Name: </label>
+					<input type="text" placeholder="Enter Original List" name="cloned">
+				</div>
+				<div class="formInput">
+					<label>Clone List Name: </label>
+					<input type="text" placeholder="Enter Clone Name" name="clone">
+				</div>
+				<div class="btnContainer">
+					<button class="btn btn-submit" type="submit" formaction="clone">Clone</button>
+					<button class="btn btn-goto"  type="submit" formaction="logIn.html">cancel</button>
+				</div>
+			</form>
 		</div>
-	</form>
+	</div>
 </body>
 </html>
