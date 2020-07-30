@@ -36,6 +36,21 @@
    <servlet-class>demo.clone</servlet-class>
 </servlet>
 
+<servlet>
+   <servlet-name>h</servlet-name>
+   <servlet-class>demo.addCar</servlet-class>
+</servlet>
+
+<servlet>
+   <servlet-name>i</servlet-name>
+   <servlet-class>demo.deleteCar</servlet-class>
+</servlet>
+
+<servlet>
+   <servlet-name>j</servlet-name>
+   <servlet-class>demo.friendList</servlet-class>
+</servlet>
+
 <servlet-mapping>
    <servlet-name>a</servlet-name>
    <url-pattern>/log</url-pattern>
@@ -69,5 +84,20 @@
 <servlet-mapping>
    <servlet-name>g</servlet-name>
    <url-pattern>/clone</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+   <servlet-name>h</servlet-name>
+   <url-pattern>/insertCar</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+   <servlet-name>i</servlet-name>
+   <url-pattern>/deleteCar</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+   <servlet-name>j</servlet-name>
+   <url-pattern>/searchFdList</url-pattern>
 </servlet-mapping>
 </web-app>

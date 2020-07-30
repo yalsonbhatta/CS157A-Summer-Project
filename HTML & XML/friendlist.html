@@ -3,24 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>FriendList</title>
-	<link rel="stylesheet" href="assets/style.css" >
-	<link rel="stylesheet" href="assets/friendlist.css" >
-</head>
-<body>
-	<div class="header">
-		<a href="main.html">Home</a>
-		<ul>
-			<li><a href="friendlist.html">Friend List</a></li>
-			<li><a href="about.html">About</a></li>
-		</ul>
-	</div>
-
+	<title>Friend Search</title>
+	<link rel="stylesheet" href="assets/css/style.css" >
+	<link rel="stylesheet" href="assets/css/auth.css" >
+</head>    
+<body>    
 	<div class="container">
-        <h1 id="vehicleheader">Friendlist</h1>
-        <div class="friend_container">
-            Friend container
-        </div>
+		<div class="form_container">
+			<form action="#">   
+				<div class="formInput">
+					<label>User ID: </label> 
+					<input type="number" placeholder="Enter User Id" name="user_id" /> 
+				</div>
+				<div class="btnContainer">
+                    <button class="btn btn-submit" type="submit"  formaction="searchFdList">Login</button>  
+                    <br />
+					<button class="btn btn-goto" type="submit" formaction="logIn.html">cancel</button>
+				</div>
+			</form>  
+		</div>
 	</div>
-</body>
-</html>
+</body>       
+</html>  
