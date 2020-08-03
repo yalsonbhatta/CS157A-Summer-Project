@@ -12,7 +12,7 @@ public class deleteCar extends HttpServlet{
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/car?serverTimezone=Asia/Hong_Kong", "root", "root");
+			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/157a?serverTimezone=UTC", "root", "root");
 			
 			String querySql = "SELECT * FROM car";
 			Statement st = connection.createStatement();
