@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Friend Search</title>
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/auth.css">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Vehicle Selector</title>
+	<link rel="stylesheet" href="assets/css/style.css" >
+	<link rel="stylesheet" href="assets/css/auth.css" >
 </head>
 <body>
+	<div class="header">
+		<a href="main.html">Home</a>
+		<ul>
+			<li><a href="wishlist.html">Wish List</a></li>
+			<li><a href="friendlist.html">Friend List</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="logIn.html">Log Out</a></li>
+		</ul>
+	</div>
 	<div class="container">
 		<div class="form_container">
 			<form action="#">
@@ -31,6 +41,7 @@
 					<label>Remove Friend: </label> <br /> <input type="number"
 						placeholder="Enter User1 Id" name="user_id1" /> <br /> <input
 						type="number" placeholder="Enter User2 Id" name="user_id2" />
+
 				</div>
 				<button class="btn btn-submit" type="submit"
 					formaction="removeFriend">Remove</button>

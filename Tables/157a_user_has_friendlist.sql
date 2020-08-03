@@ -23,9 +23,9 @@ DROP TABLE IF EXISTS `user_has_friendlist`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `user_has_friendlist` (
-  `user_id` int NOT NULL,
   `friendlist_id` int NOT NULL,
-  PRIMARY KEY (`user_id`,`friendlist_id`)
+  `user_id` int NOT NULL,
+  PRIMARY KEY (`friendlist_id`,`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -35,7 +35,7 @@ CREATE TABLE `user_has_friendlist` (
 
 LOCK TABLES `user_has_friendlist` WRITE;
 /*!40000 ALTER TABLE `user_has_friendlist` DISABLE KEYS */;
-INSERT INTO `user_has_friendlist` VALUES (1111,1),(1313,4),(1616,5),(2222,2),(3333,3),(50492,6),(148959,7),(193041,8),(408929,9),(556607,10),(610003,11),(720968,12),(856301,13),(940161,14),(988059,15);
+INSERT INTO `user_has_friendlist` VALUES (1,2222),(1,3333),(1,148959),(2,1111),(2,3333),(3,1111),(3,1313),(3,2222),(4,193041),(4,408929),(5,556607),(6,556607),(6,988059),(7,408929),(7,859301),(8,988059);
 /*!40000 ALTER TABLE `user_has_friendlist` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-07-13 12:59:47
+-- Dump completed on 2020-07-30  4:33:14

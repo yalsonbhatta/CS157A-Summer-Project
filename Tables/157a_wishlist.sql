@@ -34,7 +34,7 @@ CREATE TABLE `wishlist` (
 
 LOCK TABLES `wishlist` WRITE;
 /*!40000 ALTER TABLE `wishlist` DISABLE KEYS */;
-INSERT INTO `wishlist` VALUES ('Honda List',1),('Future Buy',2),('Look For',3),('Never',4),('Price Check',5),('When drop',6),('Just looking',7),('One day',8),('Just a dream',9),('Just looking',10),('Never',11),('Just a dream',12),('Just looking',13),('Give me',14),('Honda List',15);
+INSERT INTO `wishlist` VALUES ('Look For',1),('Future Buy',2),('Look For',3),('Never',4),('Price Check',5),('When drop',6),('Just looking',7),('One day',8),('Just a dream',9),('Just looking',10),('Never',11),('Just a dream',12),('Just looking',13),('Give me',14),('Honda List',11);
 /*!40000 ALTER TABLE `wishlist` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

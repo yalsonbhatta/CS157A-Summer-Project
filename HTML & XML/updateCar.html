@@ -1,47 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Update Car</title>
+	<link rel="stylesheet" href="assets/css/style.css" >
+	<link rel="stylesheet" href="assets/css/main.css" >
 </head>
 <body>
-	<h1>Update Car</h1>
-	<form>
-		<div class="container">
-			<label>Car Make:</label>
-			<br />
-			<input type ="text" placeholder = "Enter Car Make" name = "make">
-			<br /><br />
-			<label>Car Model:</label>
-			<br />
-			<input type ="text" placeholder = "Enter Car Model" name = "model">
-			<br /><br />
-			<label>Car Year:</label>
-			<br />
-			<input type ="text" placeholder = "Enter Car Year" name = "year">
-			<br /><br />
-			<label>Car New Make (Enter make, even if it is not changing.):</label>
-			<br />
-			<input type ="text" placeholder = "Enter Car Make" name = "nMake">
-			<br /><br />
-			<label>Car New Model (Enter model, even if it is not changing.)</label>
-			<br />
-			<input type ="text" placeholder = "Enter Car Model" name = "nModel">
-			<br /><br />
-			<label>Car New Year (Enter make, even if it is not changing.):</label>
-			<br />
-			<input type ="text" placeholder = "Enter Car Year" name = "nYear">
-			<br /><br />
-			<label>Car New Price (Enter make, even if it is not changing.):</label>
-			<br />
-			<input type ="text" placeholder = "Enter Car Price" name = "nPrice">
-			<button type="submit" formaction="updateCar">UPDATE!</button>
-            <br /><br />
-            <button type="submit" formaction="aMain.html">cancel</button>
-			<br />
+	<div class="header">
+		<a href="aMain.html">Home</a>
+		<ul>
+			<li><a href="wishlist.html">Wish List</a></li>
+			<li><a href="friendlist.html">Friend List</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="addCar.html">Add Car</a></li>
+			<li><a href="updateCar.html">Update Car</a></li>
+			<li><a href="deleteCar.html">Delete Car</a></li>
+			<li><a href="logIn.html">Log Out</a></li>
+		</ul>
+	</div>
+	<div class="container">
+		<h1 id="vehicleheader">Update Car</h1>
+		<div class="sub_container">
+			<form>
+				<div>
+					<label>Car Make:</label>
+					<input type ="text" placeholder = "Enter Car Make" name = "make">
+				</div>
+				<div>
+					<label>Car Model:</label>
+					<input type ="text" placeholder = "Enter Car Model" name = "model">
+				</div>
+				<div>
+					<label>Car Year:</label>
+					<input type ="text" placeholder = "Enter Car Year" name = "year">
+				</div>
+				<div>
+					<label>Car New Make (Enter make, even if it is not changing.):</label>
+					<input type ="text" placeholder = "Enter Car Make" name = "nMake">
+				</div>
+				<div>
+					<label>Car New Model (Enter model, even if it is not changing.)</label>
+					<input type ="text" placeholder = "Enter Car Model" name = "nModel">
+				</div>
+				<div>
+					<label>Car New Year (Enter make, even if it is not changing.):</label>
+					<input type ="text" placeholder = "Enter Car Year" name = "nYear">
+				</div>
+				<div>
+					<label>Car New Price (Enter make, even if it is not changing.):</label>
+					<input type ="text" placeholder = "Enter Car Price" name = "nPrice">
+				</div>
+				<div>
+					<button class="btn btn-submit" type="submit" formaction="updateCar">UPDATE!</button>
+				</div>
+				<div>
+					<button class="btn btn-link" formaction="aMain.html">cancel</button>
+				</div>
+			</form>
 		</div>
-	</form>
-
+	</div>
 </body>
 </html>
