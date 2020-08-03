@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>The Vehicle Selector</title>
@@ -19,16 +20,35 @@
 	</div>
 	<div class="container">
 		<div class="form_container">
-			<form action="#">   
+			<form action="#">
 				<div class="formInput">
-					<label>User ID: </label> 
-					<input type="number" placeholder="Enter User Id" name="user_id" /> 
+					<label>User ID: </label> <br /> <input type="number"
+						placeholder="Enter User Id" name="user_id" />
 				</div>
-				<div class="btnContainer">
-                    <button class="btn btn-submit" type="submit"  formaction="searchFdList">Search Friend</button>  
+				<button class="btn btn-submit" type="submit"
+					formaction="searchFdList">Search</button>
+				<br />
+
+				<div class="formInput">
+					<label>Add Friend: </label> <br /> <input type="number"
+						placeholder="Enter User1 Id" name="user_id3" /> <br /> <input
+						type="number" placeholder="Enter User2 Id" name="user_id4" />
 				</div>
-			</form>  
+				<button class="btn btn-submit" type="submit" formaction="addFriend">Add</button>
+				<br />
+
+				<div class="formInput">
+					<label>Remove Friend: </label> <br /> <input type="number"
+						placeholder="Enter User1 Id" name="user_id1" /> <br /> <input
+						type="number" placeholder="Enter User2 Id" name="user_id2" />
+
+				</div>
+				<button class="btn btn-submit" type="submit"
+					formaction="removeFriend">Remove</button>
+				<br /> <br />
+				<button class="btn btn-goto" type="submit" formaction="logIn.html">cancel</button>
 		</div>
+		</form>
 	</div>
-</body>       
-</html>  
+</body>
+</html>
