@@ -61,6 +61,11 @@
    <servlet-class>demo.removeFriend</servlet-class>
 </servlet>
 
+<servlet>
+   <servlet-name>m</servlet-name>
+   <servlet-class>demo.updateConsumer</servlet-class>
+</servlet>
+
 <servlet-mapping>
    <servlet-name>a</servlet-name>
    <url-pattern>/log</url-pattern>
@@ -119,5 +124,10 @@
 <servlet-mapping>
    <servlet-name>l</servlet-name>
    <url-pattern>/removeFriend</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+   <servlet-name>m</servlet-name>
+   <url-pattern>/updateConsumer</url-pattern>
 </servlet-mapping>
 </web-app>
