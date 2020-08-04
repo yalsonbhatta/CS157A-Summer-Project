@@ -1,13 +1,16 @@
 /*container css*/
 
 .container #vehicleheader {
-    color: white;
+    color: grey;
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 10px 0 10px 0;
     border-bottom: 1px solid white;
+    margin-top: 20px;
 }
 .container .sub_container {
     margin: 50px 0 50px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px 10% 20px 10%;
 }
 .container .sub_container form div {
     margin-top: 20px;
@@ -16,10 +19,9 @@
 .sub_container form label {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.sub_container form .select {
-    background-color: rgb(221, 221, 189);
+.sub_container form .input-form {
     height: 27px;
-    border: none;
+    border: 1px solid blue;
 }
 .sub_container form .lg {
     width: 200px;
@@ -27,34 +29,4 @@
 
 .sub_container form .sm {
     width: 70px;
-}
-.sub_container form .btn-submit {
-    background-color: green;
-    width: 100px;
-    border: 1px solid rgba(0, 0, 255, 0.233);
-    border-radius: 10px;
-}
-.sub_container form .btn-submit:hover {
-    background-color: blue;
-}
-.btn {
-    height: 30px;
-    color: white;
-    border-radius: 10px;
-}
-.btn-link {
-    background-color: rgba(255, 0, 0, 0.637);
-    width: 70px;
-    border: none;
-}
-.btn-link:hover{
-    background-color: red;
-}
-.btn-cancel {
-    background-color:rgba(0, 0, 0, 0.61);
-    width: 70px;
-    border: none;
-}
-.btn-cancel:hover{
-    background-color: rgb(68, 21, 21);
 }
